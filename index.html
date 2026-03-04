@@ -12,7 +12,7 @@
 
 
   <nav class="nav">
-    <div class="nav-logo">HIOU</div>
+    <a href="#" class="nav-logo" aria-label="Back to top">HIOU</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -20,8 +20,34 @@
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="mailto:hichamouauche@gmail.com" class="nav-cta">Contact Me</a>
+    <a href="#contact-form" class="nav-cta">Contact Me</a>
   </nav>
+
+  <section class="contact-form-panel" id="contact-form">
+    <div class="contact-form-box">
+      <h2>Send me a message</h2>
+      <p>Fill your information and your message below.</p>
+
+      <form action="mailto:hichamouauche@gmail.com" method="post" enctype="text/plain" class="contact-form-simple">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="Full Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="Phone" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Send</button>
+          <a href="#" class="btn-ghost">Close</a>
+        </div>
+      </form>
+    </div>
+  </section>
 
   <section class="hero">
     <div class="hero-bg">
